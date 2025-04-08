@@ -1,0 +1,42 @@
+.benefits-section .container {
+  gap: 1.5rem;
+  padding-top: 90px;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  flex: 1;
+  padding: 1rem 3rem;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.benefit-item div:nth-child(1) {
+  position: relative;
+  padding: 1rem;
+  border-radius: 100px;
+  background-color: var(--secondary-color);
+  color: var(--terciary-color);
+}
+
+.benefit-item div:nth-child(1)::after {
+  position: absolute;
+  inset: 1;
+  content: '';
+  width: 110%;
+  height: 110%;
+  border: solid 1px var(--terciary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item__content {
+  align-items: start;
+  gap: 0.2rem;
+}
+
+@media (width >= 1024px) {
+  .benefit-item {
+    padding: 1rem;
+  }
+}

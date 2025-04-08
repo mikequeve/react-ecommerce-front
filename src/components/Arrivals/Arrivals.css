@@ -1,0 +1,4 @@
+.arrivals-products__container {
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}

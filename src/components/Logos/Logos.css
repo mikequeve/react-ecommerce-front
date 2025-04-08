@@ -1,0 +1,23 @@
+.logos-section-content {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.logos-section-content > .logos-section-container {
+  flex: 1;
+  gap: 1rem;
+  border-right: solid 1px #d5e2dd;
+  padding: 1rem;
+}
+
+.logos-section-content > .logos-section-container:last-child {
+  border-right: initial;
+}
+
+.logos-section-container .logo {
+  width: 10rem;
+  object-fit: contain;
+  aspect-ratio: 2/1;
+  filter: contrast(40%);
+}
