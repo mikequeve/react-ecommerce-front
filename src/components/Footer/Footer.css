@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--secondary-color);
+}
+
+.footer .container {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 10px;
+}
+
+.copyright {
+  gap: 0.5rem;
+}
+
+@media (width >= 1024px) {
+  .footer .container {
+    flex-direction: row;
+  }
+}

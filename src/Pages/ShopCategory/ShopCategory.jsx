@@ -4,6 +4,7 @@ import './ShopCategory.css';
 import { useLocation } from 'react-router-dom';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import { GlobalContext } from '../../context/GlobalContext';
+import Footer from '../../components/Footer/Footer';
 
 const ShopCategory = ({ title, img }) => {
   const category = useLocation().pathname.slice(1);
@@ -34,26 +35,29 @@ const ShopCategory = ({ title, img }) => {
   }, [category]);
 
   return (
-    <main>
-      <Hero title={title} img={img} />
-      <section className='flex-center products-section'>
-        <article className='flex-column container'>
-          <h2 className='section-subtitle'>Products</h2>
-          <div className='flex-center products-content'>
-            {products.map((product, index) => (
-              <ProductCard
-                key={index}
-                id={product.productId}
-                imgUrl={product.imgUrl}
-                name={product.name}
-                price={product.price}
-                sizes={product.size}
-              />
-            ))}
-          </div>
-        </article>
-      </section>
-    </main>
+    <>
+      <main>
+        <Hero title={title} img={img} />
+        <section className='flex-center products-section'>
+          <article className='flex-column container'>
+            <h2 className='section-subtitle'>Products</h2>
+            <div className='flex-center products-content'>
+              {products.map((product, index) => (
+                <ProductCard
+                  key={index}
+                  id={product.productId}
+                  imgUrl={product.imgUrl}
+                  name={product.name}
+                  price={product.price}
+                  sizes={product.size}
+                />
+              ))}
+            </div>
+          </article>
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 };
 

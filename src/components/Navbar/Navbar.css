@@ -1,3 +1,12 @@
+.site-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  z-index: 999;
+}
+
 .site-navbar .container {
   padding: 1rem 10px;
 }
@@ -9,7 +18,6 @@
 .site-navbar__logo > span {
   font-size: 1.4rem;
   font-weight: 800;
-  margin-bottom: -10px;
 }
 
 .site-navbar__logo span:nth-child(1) {
@@ -76,7 +84,6 @@
 @media (width >= 1024px) {
   .navbar-item {
     flex: 1;
-    height: 4rem;
   }
 
   .site-navbar__menu {

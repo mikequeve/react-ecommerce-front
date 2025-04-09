@@ -38,5 +38,6 @@
 @media (width >= 1024px) {
   .benefit-item {
     padding: 1rem;
+    justify-content: center;
   }
 }

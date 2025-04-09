@@ -1,3 +1,7 @@
+.site-hero {
+  padding-top: 6rem;
+}
+
 .site-hero .container {
   background: var(--secondary-color);
   flex-wrap: wrap;

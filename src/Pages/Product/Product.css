@@ -1,3 +1,7 @@
+.product-details {
+  padding-top: 6rem;
+}
+
 .product-details__content {
   justify-content: space-between;
   flex-wrap: wrap;

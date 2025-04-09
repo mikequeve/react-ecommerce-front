@@ -35,6 +35,16 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+  background: var(--main-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--terciary-color);
+  border-radius: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -126,6 +136,7 @@ ul {
 
 .section-subtitle {
   position: relative;
+  text-align: center;
 }
 
 .section-subtitle::after {

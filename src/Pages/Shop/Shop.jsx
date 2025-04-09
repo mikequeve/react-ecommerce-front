@@ -4,16 +4,20 @@ import Logos from '../../components/Logos/Logos';
 import Categories from '../../components/Categories/Categories';
 import Benefits from '../../components/Benefits/Benefits';
 import Arrivals from '../../components/Arrivals/Arrivals';
+import Footer from '../../components/Footer/Footer';
 
-const Shop = ({title, img, button}) => {
+const Shop = ({ title, img, button }) => {
   return (
-    <div>
-      <Hero title={title} img={img} button={button} />
-      <Benefits />
-      <Categories />
-      <Logos />
-      <Arrivals />
-    </div>
+    <>
+      <main>
+        <Hero title={title} img={img} button={button} />
+        <Benefits />
+        <Categories />
+        <Logos />
+        <Arrivals />
+      </main>
+      <Footer />
+    </>
   );
 };
 
