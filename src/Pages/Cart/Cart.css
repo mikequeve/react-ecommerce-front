@@ -1,5 +1,6 @@
 .site-cart {
   padding-top: 6rem;
+  min-height: 90vh;
 }
 
 .site-cart .container {

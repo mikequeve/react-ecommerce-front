@@ -1,5 +1,6 @@
 .product-details {
   padding-top: 6rem;
+  min-height: 90vh;
 }
 
 .product-details__content {
