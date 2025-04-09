@@ -1,6 +1,6 @@
 .site-cart {
   padding-top: 6rem;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .site-cart .container {
@@ -12,12 +12,12 @@
 .order-sumary {
   align-items: start;
   justify-content: start;
-  min-height: 30rem;
+  height: 30rem;
   padding: 1rem;
 }
 
 .cart-list__container {
-  width: min(100%, 50rem);
+  width: 100%;
 }
 
 .cart-list__container .cart-list__text {
@@ -33,7 +33,8 @@
 }
 
 .order-sumary {
-  width: min(100%, 25rem);
+  width: 100%;
+  height: 15rem;
   justify-content: space-between;
   background-color: var(--secondary-color);
 }
@@ -140,5 +141,16 @@ td {
 @media (width >= 768px) {
   .cart-list__content {
     overflow-x: auto;
+  }
+}
+
+@media (width >= 1268px) {
+  .cart-list__container {
+    width: 50rem;
+  }
+
+  .order-sumary {
+    width: 25rem;
+    height: 30rem;
   }
 }
