@@ -83,17 +83,24 @@ const GlobalContextProvider = ({ children }) => {
 
   const purchase = (cartItems) => {
     if (cartItems.length > 0) {
-      Swal.fire({
-        title: 'purchase successfully completed',
-        icon: 'success',
-        timer: 3000,
-      });
-      location.assign('/');
+      try {
+        Swal.fire({
+          title: 'purchase successfully completed',
+          icon: 'success',
+          timer: 3000,
+          showConfirmButton: false,
+        });
+        setCartItems([]);
+        window.location.href = '/';
+      } catch (error) {
+        handlerApiErrors(error, 'Error diring purchase');
+      }
     } else {
       Swal.fire({
         title: 'Please add some products to continue',
         icon: 'error',
         timer: 3000,
+        showConfirmButton: false,
       });
     }
   };
