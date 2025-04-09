@@ -81,10 +81,10 @@ const GlobalContextProvider = ({ children }) => {
     return setCartItems((prevItems) => prevItems.filter((item) => item.id !== productId));
   };
 
-  const purchase = (cartItems) => {
+  const purchase = async (cartItems) => {
     if (cartItems.length > 0) {
       try {
-        Swal.fire({
+        await Swal.fire({
           title: 'purchase successfully completed',
           icon: 'success',
           timer: 3000,
@@ -96,7 +96,7 @@ const GlobalContextProvider = ({ children }) => {
         handlerApiErrors(error, 'Error diring purchase');
       }
     } else {
-      Swal.fire({
+      await Swal.fire({
         title: 'Please add some products to continue',
         icon: 'error',
         timer: 3000,
