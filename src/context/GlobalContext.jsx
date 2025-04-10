@@ -4,10 +4,11 @@ import Swal from 'sweetalert2';
 export const GlobalContext = createContext();
 
 const API_ENDPOINTS = {
-  allProducts: 'https://react-ecommerce-back-production.up.railway.app/products',
+  allProducts: 'https://fullstack-ecommerce-backend-production.up.railway.app/products',
   recentProducts:
-    'https://react-ecommerce-back-production.up.railway.app/products/recent',
-  catProducts: 'https://react-ecommerce-back-production.up.railway.app/products/category',
+    'https://fullstack-ecommerce-backend-production.up.railway.app/products/recent',
+  catProducts:
+    'https://fullstack-ecommerce-backend-production.up.railway.app/products/category',
 };
 
 const handlerApiErrors = (error, customMsg) => {
